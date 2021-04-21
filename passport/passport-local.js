@@ -22,8 +22,8 @@ passport.use(
       passwordField: "password",
       passReqToCallback: true,
     },
-    (rerq, res, done) => {
-      User.findOne({ email: email }, (err, user) => {
+    (req, res, done) => {
+      User.findOne({ "email": req.body.email }, (err, user) => {
         if (err) {
           return done(err);
         }
