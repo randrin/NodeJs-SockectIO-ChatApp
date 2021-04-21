@@ -7,4 +7,7 @@
 - Configure server.js, 
 - setup router
 #### 3. Users Local Registration
-- install some dependencies: cookie-parser, express-validator, express-session, connect-mongo, connect-flash, mongoose, dotenv
+- Install some dependencies: cookie-parser, express-validator, express-session, connect-mongo, connect-flash, mongoose, dotenv
+- Create the public folder
+- Create user model
+- Set up passport configuration

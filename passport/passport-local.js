@@ -13,3 +13,37 @@ passport.deserializeUser((id, done) => {
     done(err, user);
   });
 });
+
+passport.use(
+  "local.signup",
+  new LocalStrategy(
+    {
+      usernameField: "email",
+      passwordField: "password",
+      passReqToCallback: true,
+    },
+    (rerq, res, done) => {
+      User.findOne({ email: email }, (err, user) => {
+        if (err) {
+          return done(err);
+        }
+        if (user) {
+          return done(
+            null,
+            false,
+            req.flash("error", "User with email already exist.")
+          );
+        }
+
+        const newUser = new User();
+        newUser.username = req.body.username;
+        newUser.email = req.body.email;
+        newUser.password = req.body.password;
+
+        newUser.save((err) => {
+          done(null, newUser);
+        });
+      });
+    }
+  )
+);
