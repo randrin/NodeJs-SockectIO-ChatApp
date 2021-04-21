@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-sockectio-chatapp",
+  "version": "1.0.0",
+  "description": "Real Messages chat app with private and group members ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec node experimental-modules server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randrin/NodeJs-SockectIO-ChatApp.git"
+  },
+  "keywords": [
+    "Aws",
+    "NodeJs",
+    "Heroku",
+    "NPM",
+    "Express",
+    "SocketIO",
+    "MongoDB"
+  ],
+  "author": "Randrin Nzeukang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randrin/NodeJs-SockectIO-ChatApp/issues"
+  },
+  "homepage": "https://github.com/randrin/NodeJs-SockectIO-ChatApp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dependable": "^1.1.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
