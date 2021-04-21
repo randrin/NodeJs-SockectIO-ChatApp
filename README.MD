@@ -11,3 +11,5 @@
 - Create the public folder
 - Create user model
 - Set up passport configuration
+- Install dependency bcrypt-nodejs to crypt and decrypt the user password
+- Modify the model user to crypt and decrypt the user password
